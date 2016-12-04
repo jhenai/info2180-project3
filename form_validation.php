@@ -32,8 +32,8 @@ try {
             $row = mysqli_fetch_assoc($result);
             $stored_password= $row['password'];
             echo '<br>' . $password . " <br> " . $stored_password;
-            
-             if (password_verify($password, $stored_password)){
+            $newpwd = md5($password);
+             if ( $newpwd === $stored_password){
              
              
             // echo "<script> window.location.href = 'index.php'; </script>";  // send them to the home page on a succesfull login
@@ -134,7 +134,8 @@ try {
     }
     else{
        $password1 = filter_var($pass, FILTER_SANITIZE_STRING);
-       $password = password_hash($password1, PASSWORD_BCRYPT, array('cost' => 12));
+      // $password = password_hash($password1, PASSWORD_BCRYPT, array('cost' => 12));
+      $password = md5($password1);
      
     }
   }
