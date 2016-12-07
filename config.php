@@ -12,7 +12,7 @@ $port = 3306;
 try {
     
     $conn = mysqli_connect($host, $username, $password, $dbname, $port);
-    echo "<script> console.log('connected'); </script>";
+    //echo "<script> console.log('connected'); </script>";
     }
     catch(Exception $e) {
    die($e->getMessages());

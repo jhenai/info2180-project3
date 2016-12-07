@@ -185,13 +185,14 @@ ul#menu li a:hover
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 10px 20px 20px 20px;
-  background: #F6F6F2 url(back.png) repeat-y;
+  background: #f0f1d3 url(back.png) repeat-y;
   border: 15px solid #FFF;} 
 
 .sidebar
-{ float: right;
-  width: 290px;
-  padding: 0 15px 20px 15px;}
+{   float: right;
+    width: 209px;
+    padding: 147px 58px 31px 15px
+}
 
 .sidebar ul
 { width: 178px; 
@@ -211,8 +212,8 @@ ul#menu li a:hover
 { color: #444;} 
 
 #content
-{ text-align: left;
-  width: 613px;
+{ text-align: center;
+  width: 629px;
   padding: 0;}
 
 #content ul
@@ -340,5 +341,15 @@ table tr td
 .btn:hover {
   background: #52d407;
   text-decoration: none;
+}
+
+
+#messageArea, #messageArea h3{
+    background-color: #fbfbf4;
+    margin: auto;
+    padding: initial;
+    margin-top: 28px;
+    border: #2f2827;ckground-color: #0a134
+  
 }
 

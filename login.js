@@ -27,10 +27,10 @@ window.onload = function(){
                
               var httpRequest; 
               if (window.XMLHttpRequest) { // Mozilla, Safari, IE7+ ...
-              httpRequest = new XMLHttpRequest();
+                    httpRequest = new XMLHttpRequest();
                
-           }
-           httpRequest.onreadystatechange = function(){
+              }
+              httpRequest.onreadystatechange = function(){
              
                if (httpRequest.readyState === XMLHttpRequest.DONE) {
                    if (httpRequest.status === 200) {

@@ -18,7 +18,7 @@ window.onload = function(){
        var username_err = document.getElementById('username _err');
        var password_err = document.getElementById('password_err');
        
-       var passwordrequirement = "[a-zA-Z0-9]((?=[a-z])*(?=[A-Z])*(?=[0-9]))";
+       var passwordrequirement = "^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*";
        
          if (firstname.value == ""){
                firstname_err.textContent = "First name is required.";
@@ -44,10 +44,13 @@ window.onload = function(){
          
          if (password.value.match(passwordrequirement)){
              console.log("password correct");
+             
          }
          else
         { 
             console.log('password incorrect');
+            password_err.textContent = "Incorrect password given";
+            return false;
             
         }
        
